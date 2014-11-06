@@ -1,0 +1,40 @@
+Paint.java Version 1.35 Release Notes - Stephen Mezzacapo
+
+FInal Version's Working Features:
+
+-The GUI consists of a menu bar and a solid white paint panel.
+	-The menu bar consists of a drop down menu of file operations.
+	-The paint panel can have images added to it via the Open File operations.
+-The working File Operations that can be selected from the drop down menu are as follows:
+	-Open an image file from the user's directory via the Open From Directory 
+	file option 
+		-A safety check for wrong file types is present.
+	-Open an image file from the Internet via the Open From Internet option
+	-Ability to clear contents of the paint panel and reset it to be blank via the New Drawing 
+	option
+	-Ability to name and save a file to a chosen location via the Save option
+	-Ability to close the window and cleanly exit via the close option
+
+-Ability to draw a straight line by clicking a point on the paint panel and dragging the mouse. The line is visible the entire time. 
+-Ability to choose the color of the straight line that is drawn.
+-Ability to draw free hand with the Pencil Tool, as well as the ability to select the color of the pencil. 
+-Addition of a Save feature which saves to a default location. 
+-A select tool that can isolate a selected portion of the image
+-Ability to drag the selected image and move it to a new location
+-A unit test to determine whether or not the Save As feature did indeed work. 
+-Ability to save drawn lines and all other changes made to the image.
+-When the user selects the 'close' option, they are prompted to save their work if changes have been made
+
+
+
+Known Issues:
+
+
+-Multiple uses of the select and drag tools can occasionally produce unexpected results. 
+-The straight line and drag tools both call the repaint() method. This can cause images to flicker a bit which can look odd. 
+
+
+Observations and Notes:
+
+-Several fields from both the GuiPaint.java class and the MouseClass.java class which are not private could be set to private and have accessor/mutator methods written for them. 
+-Javadoc commentation could have been added to all fields. 
